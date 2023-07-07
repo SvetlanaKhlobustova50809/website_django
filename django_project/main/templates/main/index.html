@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1 class="hh">{{ title }}</h1>
+        <p class="p">Добро пожаловать на сайт по работе с новостями. Здесь вы сможете создавать, редактировать и удалять свои новости. Подробнее можете узнать на странице About us. Желаем приятной работы с нашим сервисом! </p>
+        <a href="{% url 'about' %}"><button class="btn btn-warning button">On page about us</button></a>
+    </div>
+{% endblock %}

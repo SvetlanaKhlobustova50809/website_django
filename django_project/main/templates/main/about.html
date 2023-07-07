@@ -1,0 +1,12 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Page about us {% endblock %}
+
+{% block content %}
+    <div class="features">
+            <h1 class="hh">About us</h1>
+            <p class="p">С помощью панели Navigation вы можете зайти на страницу News - там можно посмотреть текущие новости, при нажатии на кнопку see more под статьёй можно отредактировать или удалить статью. Также можно создавать статью с помощью кнопки Add article на понели Navigation. На странице contacts можно узнать информацию об авторе.</p>
+            <a href="{% url 'news_home' %}"><button class="btn btn-danger button">News</button></a>
+            <a href="{% url 'contacts' %}"><button class="btn btn-danger button">Contacts</button></a>
+    </div>
+{% endblock %}
